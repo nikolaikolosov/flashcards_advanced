@@ -472,3 +472,368 @@ Completed 200 OK in 151ms (Views: 110.7ms | ActiveRecord: 7.2ms)
   [1m[35m (0.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150406123839')
   [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150406143521')[0m
   [1m[35m (0.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150406175232')
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-07 00:41:55 +0300
+[Rollbar] Reporting exception: 
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+
+[Rollbar] Scheduling payload
+[Rollbar] Sending payload
+[Rollbar] Got unexpected status code from Rollbar api: 400
+[Rollbar] Response: {
+  "err": 1,
+  "message": "access token required"
+}
+[Rollbar] Details: https://rollbar.com/instance/uuid?uuid=e2a9a30f-d7ac-4c89-a66d-8c649eeb65d4 (only available if report was successful)
+[Rollbar] Exception uuid saved in env: e2a9a30f-d7ac-4c89-a66d-8c649eeb65d4
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.1) lib/active_record/migration.rb:393:in `check_pending!'
+  activerecord (4.2.1) lib/active_record/migration.rb:374:in `call'
+  newrelic_rpm (3.12.0.288) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  newrelic_rpm (3.12.0.288) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  newrelic_rpm (3.12.0.288) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  newrelic_rpm (3.12.0.288) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rollbar (1.5.2) lib/rollbar/middleware/rails/rollbar.rb:24:in `block in call'
+  rollbar (1.5.2) lib/rollbar.rb:799:in `scoped'
+  rollbar (1.5.2) lib/rollbar/middleware/rails/rollbar.rb:22:in `call'
+  newrelic_rpm (3.12.0.288) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  rollbar (1.5.2) lib/rollbar/middleware/rails/show_exceptions.rb:22:in `call_with_rollbar'
+  newrelic_rpm (3.12.0.288) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.12.0.288) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (3.12.0.288) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.12.0.288) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  newrelic_rpm (3.12.0.288) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  newrelic_rpm (3.12.0.288) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  newrelic_rpm (3.12.0.288) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.12.0.288) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  newrelic_rpm (3.12.0.288) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  newrelic_rpm (3.12.0.288) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  newrelic_rpm (3.12.0.288) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /home/nikolay/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/nikolay/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/nikolay/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/nikolay/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (46.6ms)
+  Rendered /home/nikolay/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.1ms)
+  Rendered /home/nikolay/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/nikolay/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (107.3ms)
+  [1m[36m (12.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (4.2ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateCards (20150324181429)
+  [1m[35m (0.2ms)[0m  BEGIN
+DEPRECATION WARNING: `#timestamp` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /home/nikolay/Programming/flashcards_advanced/db/migrate/20150324181429_create_cards.rb:8)
+  [1m[36m (7.3ms)[0m  [1mCREATE TABLE "cards" ("id" serial primary key, "original" text, "translated" text, "review" date, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150324181429"]]
+  [1m[36m (5.0ms)[0m  [1mCOMMIT[0m
+Migrating to RenameOriginalFromCards (20150325070602)
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "cards" RENAME COLUMN "original" TO "original_text"[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "cards" RENAME COLUMN "translated" TO "translated_text"
+  [1m[36m (3.4ms)[0m  [1mALTER TABLE "cards" RENAME COLUMN "review" TO "review_date"[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150325070602"]]
+  [1m[36m (2.0ms)[0m  [1mCOMMIT[0m
+Migrating to CreateUsers (20150327203129)
+  [1m[35m (0.2ms)[0m  BEGIN
+DEPRECATION WARNING: `#timestamp` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /home/nikolay/Programming/flashcards_advanced/db/migrate/20150327203129_create_users.rb:7)
+  [1m[36m (7.2ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "email" character varying, "password" character varying, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150327203129"]]
+  [1m[36m (1.4ms)[0m  [1mCOMMIT[0m
+Migrating to AddUserIdToCards (20150327203526)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.9ms)[0m  [1mALTER TABLE "cards" ADD "user_id" integer[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150327203526"]]
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+Migrating to ChangeUserIdFieldFromCards (20150327220548)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "cards" ALTER COLUMN "user_id" TYPE integer[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "cards" ALTER "user_id" SET NOT NULL
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150327220548"]]
+  [1m[35m (1.1ms)[0m  COMMIT
+Migrating to SorceryCore (20150329103805)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "users" ALTER COLUMN "email" TYPE character varying
+  [1m[36m (3.1ms)[0m  [1mALTER TABLE "users" ALTER "email" SET NOT NULL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" RENAME COLUMN "password" TO "crypted_password"
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "users" ADD "salt" character varying[0m
+  [1m[35m (2.7ms)[0m  CREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150329103805"]]
+  [1m[35m (1.0ms)[0m  COMMIT
+Migrating to SorceryRememberMe (20150329103806)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.6ms)[0m  ALTER TABLE "users" ADD "remember_me_token" character varying
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "users" ADD "remember_me_token_expires_at" timestamp[0m
+  [1m[35m (2.5ms)[0m  CREATE  INDEX  "index_users_on_remember_me_token" ON "users"  ("remember_me_token")
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150329103806"]]
+  [1m[35m (1.2ms)[0m  COMMIT
+Migrating to SorceryResetPassword (20150329103807)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.9ms)[0m  ALTER TABLE "users" ADD "reset_password_token" character varying
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "users" ADD "reset_password_token_expires_at" timestamp[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "users" ADD "reset_password_email_sent_at" timestamp
+  [1m[36m (6.3ms)[0m  [1mCREATE  INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150329103807"]]
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+Migrating to SorceryExternal (20150329171607)
+  [1m[35m (0.2ms)[0m  BEGIN
+DEPRECATION WARNING: `#timestamp` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /home/nikolay/Programming/flashcards_advanced/db/migrate/20150329171607_sorcery_external.rb:7)
+  [1m[36m (6.1ms)[0m  [1mCREATE TABLE "authentications" ("id" serial primary key, "user_id" integer NOT NULL, "provider" character varying NOT NULL, "uid" character varying NOT NULL, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (2.1ms)[0m  CREATE  INDEX  "index_authentications_on_provider_and_uid" ON "authentications"  ("provider", "uid")
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150329171607"]]
+  [1m[35m (1.1ms)[0m  COMMIT
+Migrating to ChangeEmailTypeFromUsers (20150329200538)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.9ms)[0m  ALTER TABLE "users" ALTER COLUMN "email" TYPE character varying
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "users" ALTER "email" DROP NOT NULL[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150329200538"]]
+  [1m[36m (1.4ms)[0m  [1mCOMMIT[0m
+Migrating to AddImageToCards (20150330165146)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "cards" ADD "image" character varying[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150330165146"]]
+  [1m[36m (1.2ms)[0m  [1mCOMMIT[0m
+Migrating to CreateBlocks (20150330194042)
+  [1m[35m (0.1ms)[0m  BEGIN
+DEPRECATION WARNING: `#timestamp` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /home/nikolay/Programming/flashcards_advanced/db/migrate/20150330194042_create_blocks.rb:6)
+  [1m[36m (7.5ms)[0m  [1mCREATE TABLE "blocks" ("id" serial primary key, "title" character varying NOT NULL, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150330194042"]]
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+Migrating to AddBlockIdToCards (20150330194306)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "cards" ADD "block_id" integer NOT NULL[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150330194306"]]
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+Migrating to AddCurrentBlockToUsers (20150330194536)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "users" ADD "current_block" integer[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150330194536"]]
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+Migrating to AddUserIdToBlocks (20150330200230)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "blocks" ADD "user_id" integer NOT NULL[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150330200230"]]
+  [1m[36m (1.2ms)[0m  [1mCOMMIT[0m
+Migrating to RenameCurrentBlockToCurrentBlockIdFromUsers (20150331102819)
+  [1m[35m (1.2ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "users" RENAME COLUMN "current_block" TO "current_block_id"[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150331102819"]]
+  [1m[36m (1.2ms)[0m  [1mCOMMIT[0m
+Migrating to AddReviewStepToCards (20150401155428)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "cards" ADD "review_step" integer[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150401155428"]]
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+Migrating to ChangeReviewStepForCards (20150401155753)
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "cards" ALTER COLUMN "review_step" TYPE integer[0m
+  [1m[35m (1.8ms)[0m  ALTER TABLE "cards" ALTER COLUMN "review_step" SET DEFAULT 0
+  [1m[36m (1.1ms)[0m  [1mUPDATE "cards" SET "review_step"=0 WHERE "review_step" IS NULL[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "cards" ALTER "review_step" SET NOT NULL
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150401155753"]]
+  [1m[35m (2.5ms)[0m  COMMIT
+Migrating to ChangeReviewDateForCards (20150401160441)
+  [1m[36m (1.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (9.2ms)[0m  ALTER TABLE "cards" ALTER COLUMN "review_date" TYPE timestamp
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "cards" ALTER "review_date" SET NOT NULL[0m
+  [1m[35m (0.7ms)[0m  ALTER TABLE "cards" ALTER COLUMN "review_step" TYPE integer
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "cards" ALTER COLUMN "review_step" SET DEFAULT 1[0m
+  [1m[35m (0.5ms)[0m  UPDATE "cards" SET "review_step"=1 WHERE "review_step" IS NULL
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "cards" ALTER "review_step" SET NOT NULL[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150401160441"]]
+  [1m[36m (1.7ms)[0m  [1mCOMMIT[0m
+Migrating to AddReviewAttemptToCards (20150402104316)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (8.1ms)[0m  [1mALTER TABLE "cards" ADD "review_attempt" integer DEFAULT 1 NOT NULL[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150402104316"]]
+  [1m[36m (2.9ms)[0m  [1mCOMMIT[0m
+Migrating to AddLocaleToUsers (20150403222932)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "users" ADD "locale" character varying[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150403222932"]]
+  [1m[36m (1.4ms)[0m  [1mCOMMIT[0m
+Migrating to ChangeLocaleForUsers (20150404104501)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "users" ALTER COLUMN "locale" TYPE character varying[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "users" ALTER COLUMN "locale" SET DEFAULT ''
+  [1m[36m (0.7ms)[0m  [1mUPDATE "users" SET "locale"='' WHERE "locale" IS NULL[0m
+  [1m[35m (3.8ms)[0m  ALTER TABLE "users" ALTER "locale" SET NOT NULL
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150404104501"]]
+  [1m[35m (1.1ms)[0m  COMMIT
+Migrating to ChangeLocaleDefaultForUsers (20150405115143)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.5ms)[0m  ALTER TABLE "users" ALTER COLUMN "locale" TYPE character varying
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "users" ALTER "locale" DROP NOT NULL[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150405115143"]]
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+Migrating to ChangeLocaleNullForUsers (20150405165550)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "users" ALTER COLUMN "locale" TYPE character varying[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" ALTER "locale" SET NOT NULL
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150405165550"]]
+  [1m[35m (1.1ms)[0m  COMMIT
+Migrating to ChangeLocaleDefaultFalseForUsers (20150405175629)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.5ms)[0m  ALTER TABLE "users" ALTER COLUMN "locale" TYPE character varying
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "users" ALTER COLUMN "locale" DROP DEFAULT[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150405175629"]]
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+Migrating to ChangeLocaleNullTrueForUsers (20150405180053)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "users" ALTER COLUMN "locale" TYPE character varying[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" ALTER "locale" DROP NOT NULL
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150405180053"]]
+  [1m[35m (1.0ms)[0m  COMMIT
+Migrating to ChangeFieldsForCards (20150406123839)
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "cards" RENAME COLUMN "review_attempt" TO "quality"
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "cards" RENAME COLUMN "review_step" TO "interval"[0m
+  [1m[35m (0.5ms)[0m  ALTER TABLE "cards" ALTER COLUMN "quality" TYPE integer
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "cards" ALTER COLUMN "quality" SET DEFAULT 5[0m
+  [1m[35m (5.7ms)[0m  UPDATE "cards" SET "quality"=5 WHERE "quality" IS NULL
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "cards" ALTER "quality" SET NOT NULL[0m
+  [1m[35m (0.5ms)[0m  ALTER TABLE "cards" ALTER COLUMN "interval" TYPE integer
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "cards" ALTER COLUMN "interval" SET DEFAULT 1[0m
+  [1m[35m (0.3ms)[0m  UPDATE "cards" SET "interval"=1 WHERE "interval" IS NULL
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "cards" ALTER "interval" SET NOT NULL[0m
+  [1m[35m (7.0ms)[0m  ALTER TABLE "cards" ADD "repeat" integer DEFAULT 1 NOT NULL
+  [1m[36m (13.4ms)[0m  [1mALTER TABLE "cards" ADD "efactor" float DEFAULT 2.5 NOT NULL[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150406123839"]]
+  [1m[36m (4.9ms)[0m  [1mCOMMIT[0m
+Migrating to AddAttemptToCards (20150406143521)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (17.2ms)[0m  [1mALTER TABLE "cards" ADD "attempt" integer DEFAULT 1 NOT NULL[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150406143521"]]
+  [1m[36m (1.7ms)[0m  [1mCOMMIT[0m
+Migrating to DeleteQualityFromCards (20150406175232)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "cards" DROP "quality"[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150406175232"]]
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+Migrating to AddQualityToCards (20150406175914)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (7.2ms)[0m  [1mALTER TABLE "cards" ADD "quality" integer DEFAULT 5 NOT NULL[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150406175914"]]
+  [1m[36m (2.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.5ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (2.8ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'authentications'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (7.7ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'blocks'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (2.5ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'cards'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (8.9ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-07 00:42:31 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (8.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (15.2ms)
+  Rendered shared/_header.html.erb (8.2ms)
+  Rendered shared/_alert_notice.html.erb (1.1ms)
+Completed 200 OK in 302ms (Views: 263.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2017-06-07 00:42:32 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-07 00:42:32 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-07 00:42:32 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-07 00:42:32 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-07 00:42:32 +0300
+
+
+Started GET "/en?user_locale=ru" for 127.0.0.1 at 2017-06-07 00:42:38 +0300
+Processing by MainController#index as HTML
+  Parameters: {"user_locale"=>"ru", "locale"=>"en"}
+  Rendered main/index.html.erb within layouts/application (4.8ms)
+  Rendered shared/_header.html.erb (8.3ms)
+  Rendered shared/_alert_notice.html.erb (1.0ms)
+Completed 200 OK in 88ms (Views: 87.0ms | ActiveRecord: 0.0ms)
