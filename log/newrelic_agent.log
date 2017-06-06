@@ -104,3 +104,193 @@
 [05/17/15 11:47:01 +0200 Kirills-MacBook-Pro.local (6992)] INFO : Installing Rails 4 view instrumentation
 [05/17/15 11:47:01 +0200 Kirills-MacBook-Pro.local (6992)] INFO : Installing Rails 4 Error instrumentation
 [05/17/15 11:47:01 +0200 Kirills-MacBook-Pro.local (6992)] INFO : Finished instrumentation
+[06/07/17 00:41:25 +0300 nikolay-VirtualBox (11353)] INFO : Starting the New Relic agent in "development" environment.
+[06/07/17 00:41:25 +0300 nikolay-VirtualBox (11353)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[06/07/17 00:41:25 +0300 nikolay-VirtualBox (11353)] INFO : Reading configuration from config/newrelic.yml (/home/nikolay/Programming/flashcards_advanced)
+[06/07/17 00:41:25 +0300 nikolay-VirtualBox (11353)] INFO : New Relic Agent Developer Mode enabled.
+[06/07/17 00:41:25 +0300 nikolay-VirtualBox (11353)] INFO : Environment: development
+[06/07/17 00:41:25 +0300 nikolay-VirtualBox (11353)] INFO : Dispatcher: webrick
+[06/07/17 00:41:25 +0300 nikolay-VirtualBox (11353)] INFO : Application: Flashcards (Development)
+[06/07/17 00:41:25 +0300 nikolay-VirtualBox (11353)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[06/07/17 00:41:25 +0300 nikolay-VirtualBox (11353)] INFO : Installing ActiveRecord 4 instrumentation
+[06/07/17 00:41:25 +0300 nikolay-VirtualBox (11353)] INFO : Installing middleware-based Excon instrumentation
+[06/07/17 00:41:25 +0300 nikolay-VirtualBox (11353)] INFO : Installing Rails 3+ middleware instrumentation
+[06/07/17 00:41:25 +0300 nikolay-VirtualBox (11353)] INFO : Installing deferred Rack instrumentation
+[06/07/17 00:41:25 +0300 nikolay-VirtualBox (11353)] INFO : Installing Rack::Builder middleware instrumentation
+[06/07/17 00:41:25 +0300 nikolay-VirtualBox (11353)] INFO : Installing Net instrumentation
+[06/07/17 00:41:25 +0300 nikolay-VirtualBox (11353)] INFO : Installing ActiveJob instrumentation
+[06/07/17 00:41:25 +0300 nikolay-VirtualBox (11353)] INFO : Installing Rails 4 Controller instrumentation
+[06/07/17 00:41:25 +0300 nikolay-VirtualBox (11353)] INFO : Installing Rails 4 view instrumentation
+[06/07/17 00:41:25 +0300 nikolay-VirtualBox (11353)] INFO : Installing Rails 4 Error instrumentation
+[06/07/17 00:41:25 +0300 nikolay-VirtualBox (11353)] INFO : Finished instrumentation
+[06/07/17 00:41:25 +0300 nikolay-VirtualBox (11353)] INFO : Doing deferred dependency-detection before Rack startup
+[06/07/17 00:41:48 +0300 nikolay-VirtualBox (11423)] INFO : Starting the New Relic agent in "development" environment.
+[06/07/17 00:41:48 +0300 nikolay-VirtualBox (11423)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[06/07/17 00:41:48 +0300 nikolay-VirtualBox (11423)] INFO : Reading configuration from config/newrelic.yml (/home/nikolay/Programming/flashcards_advanced)
+[06/07/17 00:41:48 +0300 nikolay-VirtualBox (11423)] INFO : New Relic Agent Developer Mode enabled.
+[06/07/17 00:41:48 +0300 nikolay-VirtualBox (11423)] INFO : Environment: development
+[06/07/17 00:41:48 +0300 nikolay-VirtualBox (11423)] INFO : Dispatcher: webrick
+[06/07/17 00:41:48 +0300 nikolay-VirtualBox (11423)] INFO : Application: Flashcards (Development)
+[06/07/17 00:41:48 +0300 nikolay-VirtualBox (11423)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[06/07/17 00:41:48 +0300 nikolay-VirtualBox (11423)] INFO : Installing ActiveRecord 4 instrumentation
+[06/07/17 00:41:48 +0300 nikolay-VirtualBox (11423)] INFO : Installing middleware-based Excon instrumentation
+[06/07/17 00:41:48 +0300 nikolay-VirtualBox (11423)] INFO : Installing Rails 3+ middleware instrumentation
+[06/07/17 00:41:48 +0300 nikolay-VirtualBox (11423)] INFO : Installing deferred Rack instrumentation
+[06/07/17 00:41:48 +0300 nikolay-VirtualBox (11423)] INFO : Installing Rack::Builder middleware instrumentation
+[06/07/17 00:41:48 +0300 nikolay-VirtualBox (11423)] INFO : Installing Net instrumentation
+[06/07/17 00:41:48 +0300 nikolay-VirtualBox (11423)] INFO : Installing ActiveJob instrumentation
+[06/07/17 00:41:48 +0300 nikolay-VirtualBox (11423)] INFO : Installing Rails 4 Controller instrumentation
+[06/07/17 00:41:48 +0300 nikolay-VirtualBox (11423)] INFO : Installing Rails 4 view instrumentation
+[06/07/17 00:41:48 +0300 nikolay-VirtualBox (11423)] INFO : Installing Rails 4 Error instrumentation
+[06/07/17 00:41:48 +0300 nikolay-VirtualBox (11423)] INFO : Finished instrumentation
+[06/07/17 00:41:48 +0300 nikolay-VirtualBox (11423)] INFO : Doing deferred dependency-detection before Rack startup
+[06/07/17 00:41:56 +0300 nikolay-VirtualBox (11423)] ERROR : Invalid license key, please contact support@newrelic.com
+[06/07/17 00:41:56 +0300 nikolay-VirtualBox (11423)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[06/07/17 00:42:06 +0300 nikolay-VirtualBox (11423)] INFO : Starting Agent shutdown
+[06/07/17 00:42:25 +0300 nikolay-VirtualBox (11543)] INFO : Starting the New Relic agent in "development" environment.
+[06/07/17 00:42:25 +0300 nikolay-VirtualBox (11543)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[06/07/17 00:42:25 +0300 nikolay-VirtualBox (11543)] INFO : Reading configuration from config/newrelic.yml (/home/nikolay/Programming/flashcards_advanced)
+[06/07/17 00:42:25 +0300 nikolay-VirtualBox (11543)] INFO : New Relic Agent Developer Mode enabled.
+[06/07/17 00:42:25 +0300 nikolay-VirtualBox (11543)] INFO : Environment: development
+[06/07/17 00:42:25 +0300 nikolay-VirtualBox (11543)] INFO : Dispatcher: webrick
+[06/07/17 00:42:25 +0300 nikolay-VirtualBox (11543)] INFO : Application: Flashcards (Development)
+[06/07/17 00:42:25 +0300 nikolay-VirtualBox (11543)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[06/07/17 00:42:25 +0300 nikolay-VirtualBox (11543)] INFO : Installing ActiveRecord 4 instrumentation
+[06/07/17 00:42:25 +0300 nikolay-VirtualBox (11543)] INFO : Installing middleware-based Excon instrumentation
+[06/07/17 00:42:25 +0300 nikolay-VirtualBox (11543)] INFO : Installing Rails 3+ middleware instrumentation
+[06/07/17 00:42:25 +0300 nikolay-VirtualBox (11543)] INFO : Installing deferred Rack instrumentation
+[06/07/17 00:42:25 +0300 nikolay-VirtualBox (11543)] INFO : Installing Rack::Builder middleware instrumentation
+[06/07/17 00:42:25 +0300 nikolay-VirtualBox (11543)] INFO : Installing Net instrumentation
+[06/07/17 00:42:25 +0300 nikolay-VirtualBox (11543)] INFO : Installing ActiveJob instrumentation
+[06/07/17 00:42:25 +0300 nikolay-VirtualBox (11543)] INFO : Installing Rails 4 Controller instrumentation
+[06/07/17 00:42:25 +0300 nikolay-VirtualBox (11543)] INFO : Installing Rails 4 view instrumentation
+[06/07/17 00:42:25 +0300 nikolay-VirtualBox (11543)] INFO : Installing Rails 4 Error instrumentation
+[06/07/17 00:42:25 +0300 nikolay-VirtualBox (11543)] INFO : Finished instrumentation
+[06/07/17 00:42:26 +0300 nikolay-VirtualBox (11543)] INFO : Doing deferred dependency-detection before Rack startup
+[06/07/17 00:42:32 +0300 nikolay-VirtualBox (11543)] ERROR : Invalid license key, please contact support@newrelic.com
+[06/07/17 00:42:32 +0300 nikolay-VirtualBox (11543)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[06/07/17 21:00:38 +0300 nikolay-VirtualBox (11543)] INFO : Starting Agent shutdown
+[2017-06-07 23:19:46 +0300 nikolay-VirtualBox (20021)] INFO : Starting the New Relic agent version 4.2.0.334 in "development" environment.
+[2017-06-07 23:19:46 +0300 nikolay-VirtualBox (20021)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-06-07 23:19:46 +0300 nikolay-VirtualBox (20021)] INFO : Reading configuration from config/newrelic.yml (/home/nikolay/Programming/flashcards_advanced)
+[2017-06-07 23:19:46 +0300 nikolay-VirtualBox (20021)] INFO : Environment: development
+[2017-06-07 23:19:46 +0300 nikolay-VirtualBox (20021)] INFO : Dispatcher: webrick
+[2017-06-07 23:19:46 +0300 nikolay-VirtualBox (20021)] INFO : Application: Flashcards (Development)
+[2017-06-07 23:19:46 +0300 nikolay-VirtualBox (20021)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2017-06-07 23:19:46 +0300 nikolay-VirtualBox (20021)] INFO : Installing middleware-based Excon instrumentation
+[2017-06-07 23:19:46 +0300 nikolay-VirtualBox (20021)] INFO : Installing Rails 3+ middleware instrumentation
+[2017-06-07 23:19:46 +0300 nikolay-VirtualBox (20021)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-06-07 23:19:46 +0300 nikolay-VirtualBox (20021)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-06-07 23:19:46 +0300 nikolay-VirtualBox (20021)] INFO : Installing Net instrumentation
+[2017-06-07 23:19:46 +0300 nikolay-VirtualBox (20021)] INFO : Installing ActiveRecord 5 instrumentation
+[2017-06-07 23:19:46 +0300 nikolay-VirtualBox (20021)] INFO : Installing ActiveJob instrumentation
+[2017-06-07 23:19:46 +0300 nikolay-VirtualBox (20021)] INFO : Installing Rails 5 Controller instrumentation
+[2017-06-07 23:19:46 +0300 nikolay-VirtualBox (20021)] INFO : Installing Rails 5 view instrumentation
+[2017-06-07 23:19:46 +0300 nikolay-VirtualBox (20021)] INFO : Installing Rails 5 Action Cable instrumentation
+[2017-06-07 23:19:46 +0300 nikolay-VirtualBox (20021)] INFO : Finished instrumentation
+[2017-06-07 23:19:46 +0300 nikolay-VirtualBox (20021)] INFO : Doing deferred dependency-detection before Rack startup
+[2017-06-07 23:19:58 +0300 nikolay-VirtualBox (20021)] ERROR : Invalid license key, please contact support@newrelic.com
+[2017-06-07 23:19:58 +0300 nikolay-VirtualBox (20021)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2017-06-08 22:35:37 +0300 nikolay-VirtualBox (20021)] INFO : Starting Agent shutdown
+[2017-06-08 22:56:11 +0300 nikolay-VirtualBox (18628)] INFO : Starting the New Relic agent version 4.2.0.334 in "development" environment.
+[2017-06-08 22:56:11 +0300 nikolay-VirtualBox (18628)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-06-08 22:56:11 +0300 nikolay-VirtualBox (18628)] INFO : Reading configuration from config/newrelic.yml (/home/nikolay/Programming/flashcards_advanced)
+[2017-06-08 22:56:11 +0300 nikolay-VirtualBox (18628)] INFO : Environment: development
+[2017-06-08 22:56:11 +0300 nikolay-VirtualBox (18628)] INFO : Dispatcher: webrick
+[2017-06-08 22:56:11 +0300 nikolay-VirtualBox (18628)] INFO : Application: Flashcards (Development)
+[2017-06-08 22:56:11 +0300 nikolay-VirtualBox (18628)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2017-06-08 22:56:11 +0300 nikolay-VirtualBox (18628)] INFO : Installing middleware-based Excon instrumentation
+[2017-06-08 22:56:11 +0300 nikolay-VirtualBox (18628)] INFO : Installing Rails 3+ middleware instrumentation
+[2017-06-08 22:56:11 +0300 nikolay-VirtualBox (18628)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-06-08 22:56:11 +0300 nikolay-VirtualBox (18628)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-06-08 22:56:11 +0300 nikolay-VirtualBox (18628)] INFO : Installing Net instrumentation
+[2017-06-08 22:56:11 +0300 nikolay-VirtualBox (18628)] INFO : Installing ActiveRecord 5 instrumentation
+[2017-06-08 22:56:11 +0300 nikolay-VirtualBox (18628)] INFO : Installing ActiveJob instrumentation
+[2017-06-08 22:56:11 +0300 nikolay-VirtualBox (18628)] INFO : Installing Rails 5 Controller instrumentation
+[2017-06-08 22:56:11 +0300 nikolay-VirtualBox (18628)] INFO : Installing Rails 5 view instrumentation
+[2017-06-08 22:56:11 +0300 nikolay-VirtualBox (18628)] INFO : Installing Rails 5 Action Cable instrumentation
+[2017-06-08 22:56:11 +0300 nikolay-VirtualBox (18628)] INFO : Finished instrumentation
+[2017-06-08 22:56:11 +0300 nikolay-VirtualBox (18628)] INFO : Doing deferred dependency-detection before Rack startup
+[2017-06-08 23:43:05 +0300 nikolay-VirtualBox (27026)] INFO : Starting the New Relic agent version 4.2.0.334 in "development" environment.
+[2017-06-08 23:43:05 +0300 nikolay-VirtualBox (27026)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-06-08 23:43:05 +0300 nikolay-VirtualBox (27026)] INFO : Reading configuration from config/newrelic.yml (/home/nikolay/Programming/flashcards_advanced)
+[2017-06-08 23:43:05 +0300 nikolay-VirtualBox (27026)] INFO : Environment: development
+[2017-06-08 23:43:05 +0300 nikolay-VirtualBox (27026)] INFO : Dispatcher: unicorn
+[2017-06-08 23:43:05 +0300 nikolay-VirtualBox (27026)] INFO : Application: Flashcards (Development)
+[2017-06-08 23:43:05 +0300 nikolay-VirtualBox (27026)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2017-06-08 23:43:05 +0300 nikolay-VirtualBox (27026)] INFO : Installing middleware-based Excon instrumentation
+[2017-06-08 23:43:05 +0300 nikolay-VirtualBox (27026)] INFO : Installing Rails 3+ middleware instrumentation
+[2017-06-08 23:43:05 +0300 nikolay-VirtualBox (27026)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-06-08 23:43:05 +0300 nikolay-VirtualBox (27026)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-06-08 23:43:05 +0300 nikolay-VirtualBox (27026)] INFO : Installing Net instrumentation
+[2017-06-08 23:43:05 +0300 nikolay-VirtualBox (27026)] INFO : Installing ActiveRecord 5 instrumentation
+[2017-06-08 23:43:05 +0300 nikolay-VirtualBox (27026)] INFO : Installing ActiveJob instrumentation
+[2017-06-08 23:43:05 +0300 nikolay-VirtualBox (27026)] INFO : Installing Rails 5 Controller instrumentation
+[2017-06-08 23:43:05 +0300 nikolay-VirtualBox (27026)] INFO : Installing Rails 5 view instrumentation
+[2017-06-08 23:43:05 +0300 nikolay-VirtualBox (27026)] INFO : Installing Rails 5 Action Cable instrumentation
+[2017-06-08 23:43:05 +0300 nikolay-VirtualBox (27026)] INFO : Finished instrumentation
+[2017-06-08 23:43:05 +0300 nikolay-VirtualBox (27026)] INFO : Doing deferred dependency-detection before Rack startup
+[2017-06-08 23:43:34 +0300 nikolay-VirtualBox (18628)] ERROR : Invalid license key, please contact support@newrelic.com
+[2017-06-08 23:43:34 +0300 nikolay-VirtualBox (18628)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2017-06-08 23:43:42 +0300 nikolay-VirtualBox (18628)] INFO : Starting Agent shutdown
+[2017-06-08 23:44:03 +0300 nikolay-VirtualBox (27026)] ERROR : Invalid license key, please contact support@newrelic.com
+[2017-06-08 23:44:03 +0300 nikolay-VirtualBox (27026)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2017-06-08 23:44:22 +0300 nikolay-VirtualBox (27289)] INFO : Starting the New Relic agent version 4.2.0.334 in "development" environment.
+[2017-06-08 23:44:22 +0300 nikolay-VirtualBox (27289)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-06-08 23:44:22 +0300 nikolay-VirtualBox (27289)] INFO : Reading configuration from config/newrelic.yml (/home/nikolay/Programming/flashcards_advanced)
+[2017-06-08 23:44:22 +0300 nikolay-VirtualBox (27289)] INFO : Environment: development
+[2017-06-08 23:44:22 +0300 nikolay-VirtualBox (27289)] INFO : Dispatcher: webrick
+[2017-06-08 23:44:22 +0300 nikolay-VirtualBox (27289)] INFO : Application: Flashcards (Development)
+[2017-06-08 23:44:22 +0300 nikolay-VirtualBox (27289)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2017-06-08 23:44:22 +0300 nikolay-VirtualBox (27289)] INFO : Installing middleware-based Excon instrumentation
+[2017-06-08 23:44:22 +0300 nikolay-VirtualBox (27289)] INFO : Installing Rails 3+ middleware instrumentation
+[2017-06-08 23:44:22 +0300 nikolay-VirtualBox (27289)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-06-08 23:44:22 +0300 nikolay-VirtualBox (27289)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-06-08 23:44:22 +0300 nikolay-VirtualBox (27289)] INFO : Installing Net instrumentation
+[2017-06-08 23:44:22 +0300 nikolay-VirtualBox (27289)] INFO : Installing ActiveRecord 5 instrumentation
+[2017-06-08 23:44:22 +0300 nikolay-VirtualBox (27289)] INFO : Installing ActiveJob instrumentation
+[2017-06-08 23:44:22 +0300 nikolay-VirtualBox (27289)] INFO : Installing Rails 5 Controller instrumentation
+[2017-06-08 23:44:22 +0300 nikolay-VirtualBox (27289)] INFO : Installing Rails 5 view instrumentation
+[2017-06-08 23:44:22 +0300 nikolay-VirtualBox (27289)] INFO : Installing Rails 5 Action Cable instrumentation
+[2017-06-08 23:44:22 +0300 nikolay-VirtualBox (27289)] INFO : Finished instrumentation
+[2017-06-08 23:44:23 +0300 nikolay-VirtualBox (27289)] INFO : Doing deferred dependency-detection before Rack startup
+[2017-06-08 23:46:10 +0300 nikolay-VirtualBox (27683)] INFO : Starting the New Relic agent version 4.2.0.334 in "development" environment.
+[2017-06-08 23:46:10 +0300 nikolay-VirtualBox (27683)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-06-08 23:46:10 +0300 nikolay-VirtualBox (27683)] INFO : Reading configuration from config/newrelic.yml (/home/nikolay/Programming/flashcards_advanced)
+[2017-06-08 23:46:10 +0300 nikolay-VirtualBox (27683)] INFO : Environment: development
+[2017-06-08 23:46:10 +0300 nikolay-VirtualBox (27683)] INFO : No known dispatcher detected.
+[2017-06-08 23:46:10 +0300 nikolay-VirtualBox (27683)] INFO : Application: Flashcards (Development)
+[2017-06-08 23:46:10 +0300 nikolay-VirtualBox (27683)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2017-06-08 23:46:10 +0300 nikolay-VirtualBox (27683)] INFO : Installing middleware-based Excon instrumentation
+[2017-06-08 23:46:10 +0300 nikolay-VirtualBox (27683)] INFO : Installing Rails 3+ middleware instrumentation
+[2017-06-08 23:46:10 +0300 nikolay-VirtualBox (27683)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-06-08 23:46:10 +0300 nikolay-VirtualBox (27683)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-06-08 23:46:10 +0300 nikolay-VirtualBox (27683)] INFO : Installing Net instrumentation
+[2017-06-08 23:46:10 +0300 nikolay-VirtualBox (27683)] INFO : Installing ActiveRecord 5 instrumentation
+[2017-06-08 23:46:10 +0300 nikolay-VirtualBox (27683)] INFO : Installing ActiveJob instrumentation
+[2017-06-08 23:46:10 +0300 nikolay-VirtualBox (27683)] INFO : Installing Rails 5 Controller instrumentation
+[2017-06-08 23:46:10 +0300 nikolay-VirtualBox (27683)] INFO : Installing Rails 5 view instrumentation
+[2017-06-08 23:46:10 +0300 nikolay-VirtualBox (27683)] INFO : Installing Rails 5 Action Cable instrumentation
+[2017-06-08 23:46:10 +0300 nikolay-VirtualBox (27683)] INFO : Finished instrumentation
+[2017-06-08 23:46:10 +0300 nikolay-VirtualBox (27683)] INFO : Doing deferred dependency-detection before Rack startup
+[2017-06-08 23:46:19 +0300 nikolay-VirtualBox (27715)] ERROR : Invalid license key, please contact support@newrelic.com
+[2017-06-08 23:46:19 +0300 nikolay-VirtualBox (27715)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2017-06-08 23:46:31 +0300 nikolay-VirtualBox (27783)] INFO : Starting the New Relic agent version 4.2.0.334 in "development" environment.
+[2017-06-08 23:46:31 +0300 nikolay-VirtualBox (27783)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-06-08 23:46:31 +0300 nikolay-VirtualBox (27783)] INFO : Reading configuration from config/newrelic.yml (/home/nikolay/Programming/flashcards_advanced)
+[2017-06-08 23:46:31 +0300 nikolay-VirtualBox (27783)] INFO : Environment: development
+[2017-06-08 23:46:31 +0300 nikolay-VirtualBox (27783)] INFO : No known dispatcher detected.
+[2017-06-08 23:46:31 +0300 nikolay-VirtualBox (27783)] INFO : Application: Flashcards (Development)
+[2017-06-08 23:46:31 +0300 nikolay-VirtualBox (27783)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2017-06-08 23:46:31 +0300 nikolay-VirtualBox (27783)] INFO : Installing middleware-based Excon instrumentation
+[2017-06-08 23:46:31 +0300 nikolay-VirtualBox (27783)] INFO : Installing Rails 3+ middleware instrumentation
+[2017-06-08 23:46:31 +0300 nikolay-VirtualBox (27783)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-06-08 23:46:31 +0300 nikolay-VirtualBox (27783)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-06-08 23:46:31 +0300 nikolay-VirtualBox (27783)] INFO : Installing Net instrumentation
+[2017-06-08 23:46:31 +0300 nikolay-VirtualBox (27783)] INFO : Installing ActiveRecord 5 instrumentation
+[2017-06-08 23:46:31 +0300 nikolay-VirtualBox (27783)] INFO : Installing ActiveJob instrumentation
+[2017-06-08 23:46:31 +0300 nikolay-VirtualBox (27783)] INFO : Installing Rails 5 Controller instrumentation
+[2017-06-08 23:46:31 +0300 nikolay-VirtualBox (27783)] INFO : Installing Rails 5 view instrumentation
+[2017-06-08 23:46:31 +0300 nikolay-VirtualBox (27783)] INFO : Installing Rails 5 Action Cable instrumentation
+[2017-06-08 23:46:31 +0300 nikolay-VirtualBox (27783)] INFO : Finished instrumentation
+[2017-06-08 23:46:31 +0300 nikolay-VirtualBox (27783)] INFO : Doing deferred dependency-detection before Rack startup
