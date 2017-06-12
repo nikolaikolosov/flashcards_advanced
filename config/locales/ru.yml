@@ -17,8 +17,8 @@ ru:
   add_deck_label: 'Добавить колоду'
   all_cards_label: 'Все карточки'
   add_card_label: 'Добавить карточку'
-  user_profile_label: 'Профиль пользователя'
-  delete_user_label: 'Удалить пользователя'
+  user_profile_label: 'Мой профиль'
+  delete_user_label: 'Удалить себя'
   log_out_label: 'Выйти'
   user_created_successfully_notice: 'Пользователь успешно создан.'
   please_log_in_alert: 'Пожалуйста авторизуйтесь.'
@@ -36,6 +36,7 @@ ru:
   log_out_is_successful_notice: 'Выход выполнен успешно.'
   log_out_failed_provider_alert: "Вход из аккаунта %{provider.titleize} не выполнен ."
   please_log_in: 'Пожалуйста авторизуйтесь.'
+  admin_panel: 'Админка'
 
   activerecord:
     errors:

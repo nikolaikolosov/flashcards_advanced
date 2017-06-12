@@ -1,4 +1,6 @@
 class User < ActiveRecord::Base
+  rolify
+  after_create :assign_default_role
   has_many :cards, dependent: :destroy
   has_many :blocks, dependent: :destroy
   has_many :authentications, dependent: :destroy
@@ -34,6 +36,14 @@ class User < ActiveRecord::Base
   end
 
   private
+
+  def assign_default_role
+    self.add_role(:newuser) if self.roles.blank?
+  end
+
+  def admin?
+    self.has_role?(:admin)
+  end
 
   def set_default_locale
     self.locale = I18n.locale.to_s
