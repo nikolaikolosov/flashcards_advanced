@@ -33,6 +33,8 @@ gem 'rollbar'
 gem 'newrelic_rpm'
 gem 'responders'
 gem 'unicorn-rails'
+gem 'rails_admin', '~> 1.2'
+gem 'pundit'
 
 group :development, :test do
   gem 'rspec-rails'
