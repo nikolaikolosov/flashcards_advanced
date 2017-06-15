@@ -9,11 +9,9 @@ gem 'pg'
 gem 'sass-rails'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails'
-
 gem 'jquery-rails'
 gem 'jbuilder'
 gem 'sdoc', '~> 0.4.0',          group: :doc
-
 gem 'rake'
 gem 'simple_form'
 gem 'nokogiri'
@@ -33,6 +31,13 @@ gem 'rollbar'
 gem 'newrelic_rpm'
 gem 'responders'
 gem 'unicorn-rails'
+gem 'rails_admin', '~> 1.2'
+gem 'rails_admin_pundit', :github => "sudosu/rails_admin_pundit"
+gem 'rails_admin-i18n'
+gem 'rails_admin_tag_list', github: 'kryzhovnik/rails_admin_tag_list'
+gem 'pundit'
+gem 'rolify'
+
 
 group :development, :test do
   gem 'rspec-rails'

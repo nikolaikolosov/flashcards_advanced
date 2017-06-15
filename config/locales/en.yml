@@ -17,7 +17,7 @@ en:
   add_deck_label: 'Add deck'
   all_cards_label: 'All cards'
   add_card_label: 'Add card'
-  user_profile_label: 'User profile'
+  user_profile_label: 'My profile'
   delete_user_label: 'Delete user'
   log_out_label: 'Log out'
   user_created_successfully_notice: 'User created successfully.'
@@ -36,6 +36,7 @@ en:
   log_out_is_successful_notice: 'Log out is successful.'
   log_out_failed_provider_alert: "Log out of your account %{provider} failed."
   please_log_in: 'Please log in.'
+  admin_panel: 'Admin'
 
   activerecord:
       errors:
