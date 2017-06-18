@@ -17,6 +17,10 @@
 
 @import 'bootstrap';
 
+$white: #ffffff;
+$half-trans-black: rgba(0, 0, 0, 0.5);
+$red: #ff0000;
+
 #header {
   margin-top: 10px;
 }
@@ -35,4 +39,32 @@
 
 .block_user_current_block_id {
   margin-left: 20px;
+}
+
+.flickr-container {
+  background: $half-trans-black;
+  border-radius: 20px;
+  color: $white;
+  display: none;
+  left: 40%;
+  padding: 10px;
+  position: absolute;
+  text-align: center;
+  top: 20%;
+  span {
+    color: $red;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    right: 11px;
+    top: 8px;
+  }
+  .flickr {
+    color: $white;
+    width: 240px;
+    .flickr-img:hover {
+      opacity: 0.5;
+    }
+  }
 }

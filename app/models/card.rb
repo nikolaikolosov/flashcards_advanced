@@ -1,6 +1,7 @@
 require 'super_memo'
 
 class Card < ActiveRecord::Base
+  attr_accessor :img_remote_url
   belongs_to :user
   belongs_to :block
   validates :user_id, presence: true
@@ -12,6 +13,7 @@ class Card < ActiveRecord::Base
   validates :block_id,
             presence: { message: 'Выберите колоду из выпадающего списка.' }
   validates :interval, :repeat, :efactor, :quality, :attempt, presence: true
+  before_save :parse_img_url
 
   mount_uploader :image, CardImageUploader
 
@@ -42,6 +44,10 @@ class Card < ActiveRecord::Base
         CardsMailer.pending_cards_notification(user.email).deliver
       end
     end
+  end
+
+  def parse_img_url
+    self.img = URI.parse(img_remote_url) if img_remote_url
   end
 
   protected

@@ -1,5 +1,6 @@
 class Dashboard::CardsController < Dashboard::BaseController
   before_action :set_card, only: [:destroy, :edit, :update]
+  before_action :flickr_photos, only: %i(new edit)
 
   def index
     @cards = current_user.cards.all.order('review_date')
@@ -7,6 +8,10 @@ class Dashboard::CardsController < Dashboard::BaseController
 
   def new
     @card = Card.new
+    respond_to do |format|
+      format.js
+      format.html
+    end
   end
 
   def edit
@@ -40,8 +45,13 @@ class Dashboard::CardsController < Dashboard::BaseController
     @card = current_user.cards.find(params[:id])
   end
 
+  def flickr_photos
+    flickr = Flickr.new(key: ENV['FLICKR_KEY'], secret: ENV['FLICKR_SECRET'])
+    @photos = flickr.photos.get_recent.sample(12)
+  end
+
   def card_params
     params.require(:card).permit(:original_text, :translated_text, :review_date,
-                                 :image, :image_cache, :remove_image, :block_id)
+                                 :image, :image_cache, :remove_image, :block_id, :img_remote_url)
   end
 end

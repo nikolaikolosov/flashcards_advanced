@@ -23,6 +23,26 @@
 
   <% if card.image? %>
     <div class="form-group">
+      <img src = @card.img.url(:thumb) />
+    </div>
+    <div class="form-group">
+      <%= f.file_field :img, as: :file %>
+    </div>
+    <div class="form-group">
+      <button class="btn-primary" type="button" id="add_pic_from_flickr">Загрузить картинку по ссылке
+      <div class = "flickr-container">
+        <p>Загрузить картинку по ссылке</p>
+        <span class="close-tag">Close</span>
+        <%= f.input :img_remote_url, label: false, input_html: { class: 'flickr-field', value: '', placeholder: 'Вставьте ссылку или выберите картинку' } %>
+        <div class="flickr">
+          <% @photos.each do |image| %>
+            <img src = image.url(:square) class="flickr-img">
+          <% end %>
+        </div>
+      </div>
+      </button>
+    </div>
+    <div class="form-group">
       <%= f.input :remove_image, as: :boolean, label: 'Удалить изображение' %>
       <div class="row">
         <div class="col-xs-6 col-md-4 card_image">

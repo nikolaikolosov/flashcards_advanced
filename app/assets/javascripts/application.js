@@ -12,4 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require flickr.js
+//= require flickr_window.js
 //= require_tree .
