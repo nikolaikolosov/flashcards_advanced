@@ -34,9 +34,11 @@ gem 'newrelic_rpm'
 gem 'responders'
 gem 'unicorn-rails'
 gem 'rails_admin', '~> 1.2'
+gem 'flickraw'
 
 group :development, :test do
   gem 'rspec-rails'
   gem 'capybara'
   gem 'factory_girl_rails'
+  gem 'webmock'
 end

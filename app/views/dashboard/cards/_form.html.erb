@@ -10,10 +10,12 @@
                 input_html: { class: 'form-control', required: true } %>
   </div>
 
-  <div class="form-group">
+  <div class="form-group" id="local_photo">
     <%= f.input :image, as: :file, label: 'Изображение' %>
     <%= f.input :image_cache, as: :hidden %>
   </div>
+
+  <button id="flickr_link" type="button" class="btn btn-default">Загрузить из Flickr</button>
 
   <div class="form-group">
     <%= f.input :block_id, collection: current_user.blocks.all.order('title'),
@@ -33,6 +35,10 @@
       </div>
     </div>
   <% end %>
+
+  <div class="form-group hidden">
+    <%= f.text_field :remote_image_url %>
+  </div>
 
   <%= f.button :submit, 'Сохранить', class: 'btn btn-default' %>
 <% end %>
