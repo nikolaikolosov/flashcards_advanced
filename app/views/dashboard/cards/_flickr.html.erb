@@ -1,0 +1,15 @@
+<div id="flickr_form">
+  <div id="flickr_main_form">
+    <%= form_tag({controller: 'dashboard/cards', action: 'search_flickr'}, remote: true,
+                 method: 'post') do %>
+
+      <div class="form-group">
+        <%= label_tag :flickr, 'Поиск картинки в Flickr' %>
+        <%= text_field_tag :flickr %>
+      </div>
+
+      <%= submit_tag 'Найти во Flickr', class: 'btn btn-default' %>
+
+    <% end %>
+  </div>
+</div>

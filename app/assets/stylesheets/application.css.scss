@@ -36,3 +36,57 @@
 .block_user_current_block_id {
   margin-left: 20px;
 }
+
+#flickr_form {
+  position: absolute;
+  top: 20%;
+  left: 15%;
+
+  width: 954px;
+  padding: 20px;
+
+  border: 2px solid gray;
+  border-radius: 10px;
+
+  display: none;
+
+  background-color: #f8f8f8;
+
+  label {
+    font-size: 16px;
+    display: block;
+    text-align: center;
+  }
+
+  input {
+    display: block;
+    width: 100%
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  li {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+
+    img {
+      width: 300px;
+      min-height: 300px;
+      padding: 0;
+      margin: 0;
+      opacity: 0.3;
+    }
+
+    img:hover {
+      opacity: 1;
+    }
+  }
+
+  #flickr_main_form {
+    margin-bottom: 20px;
+  }
+}

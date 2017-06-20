@@ -13,7 +13,7 @@ class Dashboard::CardsController < Dashboard::BaseController
   end
 
   def create
-    @card = current_user.cards.build(card_params)
+    @card = current_user.cards.create(card_params)
     if @card.save
       redirect_to cards_path
     else
@@ -31,7 +31,14 @@ class Dashboard::CardsController < Dashboard::BaseController
 
   def destroy
     @card.destroy
-    respond_with @card
+    redirect_to cards_path
+  end
+
+  def search_flickr
+    @links_for_photos = Flickr.photos(params[:flickr])
+    respond_to do |format|
+      format.js
+    end
   end
 
   private
@@ -42,6 +49,7 @@ class Dashboard::CardsController < Dashboard::BaseController
 
   def card_params
     params.require(:card).permit(:original_text, :translated_text, :review_date,
-                                 :image, :image_cache, :remove_image, :block_id)
+                                 :image, :image_cache, :remove_image, :block_id,
+                                 :remote_image_url)
   end
 end

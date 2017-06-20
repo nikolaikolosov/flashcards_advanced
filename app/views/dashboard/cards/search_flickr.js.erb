@@ -1,0 +1,14 @@
+$('#flickr_form').append("<%= escape_javascript(render 'photos_flickr') %>");
+
+$('#flickr').val('');
+
+//$('#flickr_photos').addEventListener('click', function(e) {
+//    alert(e.target.id);
+//});
+var ul = document.getElementById('flickr_photos');
+ul.onclick = function(event) {
+    var target = event.target;
+    $('#flickr_form').fadeToggle();
+    $('#local_photo').fadeToggle();
+    $('input#card_remote_image_url').val(target.src);
+};
